@@ -1,0 +1,47 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.DS_Store
+Thumbs.db
+
+# Compiled extensions and Fortran build outputs.
+*.pyd
+*.so
+*.dll
+*.lib
+*.exp
+*.mod
+.f2py_f2cmap
+
+.venv/
+.vscode/
+.codex/
+.agents/
+
+inversion_results*.pkl
+*_run*.pkl
+*.pkl
+# Saved models used by paper Figures 4 and 8.
+!/examples/syn_test/ga/inversion_results_v1_run086.pkl
+!/examples/syn_test/pso/inversion_results_v1_run04.pkl
+!/examples/ridgecrest_test/ga/inversion_results_v1_run022.pkl
+inverse_model/
+runs/
+temp/
+# Local research data and generated artifacts.
+/Ridgecrest_test/
+*.SAC
+*.sac
+*.mseed
+*.seed
+*.npy
+*.npz
+examples/**/sac/
+examples/**/fztw_inv/
+examples/**/single_event_figures/
+/PyFZTW/forward/hs4pdis.f90

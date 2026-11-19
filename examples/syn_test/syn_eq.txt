@@ -1,0 +1,6 @@
+1
+x 1 0 #relative
+y 1 0 #absolute
+z 0 1 10
+
+

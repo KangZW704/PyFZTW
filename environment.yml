@@ -1,0 +1,18 @@
+name: pyfztw
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib=3.10
+  - obspy
+  - utm
+  - deap
+  - meson
+  - ninja
+  - pip
+  - setuptools
+  - fortran-compiler

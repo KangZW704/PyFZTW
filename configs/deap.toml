@@ -1,0 +1,41 @@
+# DEAP/GA optimizer configuration
+# Cost is roughly population_size * n_generations evaluations.
+
+# Individuals per generation.
+population_size = 200
+
+# Number of generations.
+n_generations = 50
+
+# Probability of crossover.
+crossover_probability = 0.65
+
+# Probability of mutation.
+mutation_probability = 0.3
+
+# Probability that each parameter mutates when an individual mutates.
+mutation_indpb = 0.18
+
+# Parent selection method: "roulette" or "tournament".
+selection_method = "tournament"
+
+# Tournament size, only used when selection_method = "tournament".
+tournament_size = 2
+
+# Crossover distribution index; higher stays closer to parents.
+# Use a scalar or parameter-name map, e.g. { default = 20, vfr = 10 }.
+eta_crossover = 20
+
+# Mutation distribution index; higher gives smaller steps.
+# Use a scalar or parameter-name map, e.g. { default = 20, vfr = 10 }.
+eta_mutation = 20
+
+# Best individuals copied unchanged to the next generation.
+elite_size = 1
+
+# Stop after this many generations without enough improvement.
+# Set to a positive integer to enable early stopping.
+# early_stop_patience = 5
+
+# Minimum fitness improvement counted by early stopping.
+early_stop_min_delta = 1e-6
